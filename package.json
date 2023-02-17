@@ -1,0 +1,21 @@
+{
+  "name": "foncia",
+  "version": "1.0.0",
+  "description": "Foncia web testing project wit hCypress",
+  "main": "index.js",
+  "scripts": {
+    "run:testing": "cypress run --headless --spec cypress/e2e/foncia --config-file envs/cypress.testing.js",
+    "run:preprod": "cypress run --headless --spec cypress/e2e/foncia --config-file envs/cypress.testing.js",
+    "open:testing": "cypress open --config-file envs/cypress.preprod.js",
+    "open:preprod": "cypress open --config-file envs/cypress.preprod.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.6.0",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

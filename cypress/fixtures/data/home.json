@@ -1,0 +1,38 @@
+{
+    "data": {
+        "pageElement": [
+            {
+                "name": "Header banner",
+                "selector": "pubBanner"
+            },
+            {
+                "name": "Header",
+                "selector": "header"
+            },
+            {
+                "name": "Search bar",
+                "selector": "searchBar"
+            },
+            {
+                "name": "suggestion",
+                "selector": "suggestion"
+            },
+            {
+                "name": "teaser",
+                "selector": "teaser"
+            },
+            {
+                "name": "carousel",
+                "selector": "carousel"
+            },
+            {
+                "name": "Card row",
+                "selector": "cardRow"
+            },
+            {
+                "name": "Found agency",
+                "selector": "foundAgency"
+            }
+        ]
+    }
+}
