@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "run:testing": "cypress run --headless --spec cypress/e2e/foncia --config-file envs/cypress.testing.js",
-    "run:preprod": "cypress run --headless --spec cypress/e2e/foncia --config-file envs/cypress.testing.js",
-    "open:testing": "cypress open --config-file envs/cypress.preprod.js",
+    "run:preprod": "cypress run --headless --spec cypress/e2e/foncia --config-file envs/cypress.preprod.js",
+    "open:testing": "cypress open --config-file envs/cypress.testing.js",
     "open:preprod": "cypress open --config-file envs/cypress.preprod.js"
   },
   "author": "",
