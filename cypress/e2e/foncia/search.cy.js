@@ -33,4 +33,17 @@ describe('Search Bar in home page', () => {
       expect($elts.length).greaterThan(0);
     })
   });
+
+  it('Rent All types in Paris with a MAX rent of 5000€', () => {
+    cy.useBasicSearchBar('location', 'all', 5000, 'Paris');
+    cy.url()
+      .should('include', 'paris')
+      .should('include', '5000')
+      .should('include', 'location');
+    cy.get(selectors.nbResultFound).invoke('text').should('not.equal', '0');
+    cy.get(selectors.resultMap).should('exist');
+    cy.get('app-annonce-card[id*="reference-"]').then($elts => {
+      expect($elts.length).greaterThan(0);
+    })
+  });
 });
